@@ -1,0 +1,192 @@
+/* General css */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap');
+
+:root {
+    --oxford-blue: #092448ff;
+    --indigo-dye: #0b4274ff;
+    --oxford-blue-2: #0e183cff;
+    --russian-violet: #0d0838ff;
+    --tyrian-purple: #4f003bff;
+}
+
+html{
+    background-image: url('./assets/fond-degrade-sombre-espace-copie_53876-99548.jpg');
+    background-repeat:repeat;
+    background-size:cover;
+    height: 100%;
+ 
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.main-container > *{
+    width: 50rem;
+}
+
+.main > h1 {
+    text-align: center;
+    color: white;
+}
+
+body{
+    margin:0px;
+}
+
+
+
+/* ------------ */
+/* Navbar */
+.navbar{
+    height:3.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(
+        90deg, /* Angle du dégradé (90° pour horizontal) */
+        var(--oxford-blue), /* Couleur de départ */
+        var(--tyrian-purple) /* Couleur d'arrivée */
+      );
+}
+
+
+.navbar div a{
+    margin:1rem;
+    padding:1rem;
+    text-decoration: none;
+    color:white;
+}
+
+.navbar a:hover{
+    background-color:rgb(103, 114, 124);
+    border-radius: 3rem;
+    
+}
+
+/* ----- */
+
+/* main content */
+
+/* ---------- */
+
+/* About me */
+.about-me{
+    display: flex;
+    flex-direction: row;
+}
+.about-me img{
+    width:15rem;
+    border-radius: 2rem;
+    margin-top:1rem;
+}
+
+.about-me p{
+    margin-top:3rem;
+    margin-left:2rem;
+    color:white;
+    font-size:1.2rem;
+    font-family: 'Fira Code', monospace;
+}
+/* ------- */
+
+/* My projects */
+
+.projects{
+    color:white;
+    text-align: center;
+}
+.projects div img{
+    width: 15rem;
+    height: 10rem;
+    border-radius: 1rem;
+}
+
+.projects div p{
+    color:white;
+    font-size:1.2rem;
+    font-family: 'Fira Code', monospace;
+}
+
+.project1{
+    display:flex;
+    flex-direction: row;
+}
+
+.project1 p{
+    margin:0px;
+    margin-left: 1.5rem;
+    overflow: scroll;
+
+}
+
+.project2{
+    display: flex;
+    flex-direction: row-reverse;
+    margin:2rem;
+}
+
+.project2 p{
+    margin-right:1.5rem;
+}
+
+.project3{
+    display:flex;
+    flex-direction: row;
+}
+
+.project3 p{
+    margin:0px;
+    margin-left: 1.5rem;
+    overflow: scroll;
+
+}
+
+/* ------- */
+
+/* Skills */
+.skills{
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ------ */
+
+/* Profiles */
+.profiles img{
+    width:2rem;
+    height: 2rem;
+    margin:0.5rem;
+}
+.profiles{
+    display: flex;
+    justify-content: center;
+}
+
+/* ------- */
+
+
+
+/* Training 
+$cd-btn: #011c37;
+$cd-txt: #15DEA5;
+.btn {
+    background: $cd-btn;
+    color: $cd-txt;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 1.85rem 3rem;
+    border-radius: 10rem;
+    transition: transform 1000ms;
+    &:hover{
+        transform: scale(1.15);
+    }
+}
+    */
