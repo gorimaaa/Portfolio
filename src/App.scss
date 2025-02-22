@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap');
+
+:root{
+    background-color: #20292F;
+    color:white;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.main-container > *{
+    width: 60rem;
+}
+
+.main > h1 {
+    text-align: center;
+    color: white;
+}
+
+
+
+
+/* Navbar */
+.navbar{
+    height:3.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar div a{
+    margin:1rem;
+    padding:1rem;
+    text-decoration: none;
+    color:white;
+    font-family:'Outfit', sans-serif;
+    font-weight: bold;
+
+}
+
+.navbar a:hover{
+    background-color:rgb(103, 114, 124);
+    border-radius: 3rem;
+    
+}
+
+/* ------- */
+
+/* About me */
+.about-me{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.about-me img{
+    width:15rem;
+    border-radius: 2rem;
+    margin-top:1rem;
+}
+
+.about-me p{
+    margin-top:3rem;
+    margin-left:2rem;
+    color:white;
+    font-size:1.2rem;
+    font-family: 'Fira Code', monospace;
+}
+/* ------- */
+
+.projects {
+    width: 60%;
+}
+
+/* My projects */
+
+#myprojects{
+    display:flex;
+    justify-content: center;
+    font-family:'Montserrat', sans-serif;
+    font-size: 30px;
+    opacity: 60%;
+}
+
+.project{
+    background-color: rgba(17, 9, 9, 0.3);
+    border-radius: 40px;
+    padding:0.5rem;
+    box-shadow: 5px 5px 5px 0px rgba(217, 195, 195, 0.3);
+    margin-top:3rem;
+    /* Effet d'ombrage */
+
+}
+
+.project > h1 {
+    display:flex;
+    justify-content: center;
+    font-family: 'Fira Code', monospace;
+}
+
+.project > div {
+    display:flex;
+    justify-content: center;
+}
+
+.project > div > img{
+    width:300px;
+    height:300px;
+    border-radius: 40px;
+    margin-right: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.project > div > p {
+    text-align: center;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:40%;
+}
+.content > p  {
+    font-family : 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-top:2rem;
+}
+.logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+.logo-item {
+    display:flex;
+    flex-direction: row;
+    font-family : 'Fira Code', sans-serif;
+    font-weight: bold;
+    font-size:18px;
+    margin:0.5rem;
+}
+
+.logo-item img {
+    margin-right: 0.7rem;
+}
+/* ----- */
+
+/* My skills */
+#skills-title{
+    display:flex;
+    justify-content: center;
+    font-family:'Montserrat', sans-serif;
+    font-size: 30px;
+    opacity: 60%;
+}
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills > .section-skill > h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size:25px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+
+
+
+.section-skill{
+    width:47%;
+    background-color: rgba(17, 9, 9, 0.3);
+    border-radius: 40px;
+    padding:0.5rem;
+    margin-top:3rem;
+}
+
+.logos-skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+
+
+
+/* Profiles */
+#profiles-title{
+    display:flex;
+    justify-content: center;
+    font-family:'Montserrat', sans-serif;
+    font-size: 30px;
+    opacity: 60%;
+}
+.profiles img{
+    width:2rem;
+    height: 2rem;
+    margin:0.5rem;
+}
+.profiles{
+    display: flex;
+    justify-content: center;
+}
+
+.profiles > img:hover{
+    cursor:pointer;
+}
+
