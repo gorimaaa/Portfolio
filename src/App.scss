@@ -57,7 +57,8 @@
 /* About me */
 .about-me{
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
 }
 .about-me img{
     width:15rem;
@@ -86,6 +87,23 @@
     font-family:'Montserrat', sans-serif;
     font-size: 30px;
     opacity: 60%;
+    margin-bottom: 0;
+    margin-top:3rem;
+}
+
+.btn-github{
+    background-color: #fff; /* fond blanc */
+    color: #111; /* texte sombre pour le contraste */
+    border: 2px solid #fff;
+    border-radius: 4px;
+    height:2rem;
+    padding:1rem;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    cursor:pointer;
+    margin-top: auto;
+    margin-bottom: 3rem;
 }
 
 .project{
@@ -163,6 +181,8 @@
     font-family:'Montserrat', sans-serif;
     font-size: 30px;
     opacity: 60%;
+    margin-bottom:0 ;
+    margin-top: 3rem;
 }
 
 .skills{
@@ -189,6 +209,14 @@
     border-radius: 40px;
     padding:0.5rem;
     margin-top:3rem;
+    transition-property: transform;
+    transition-duration: 1000ms;
+
+}
+
+.section-skill:hover{
+    cursor:pointer;
+    transform:scale(1.05);
 }
 
 .logos-skills{
@@ -196,8 +224,13 @@
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+    margin-left:2rem;
 
 
+}
+
+.logos-skills .logo-item{
+    margin:1rem;
 }
 
 

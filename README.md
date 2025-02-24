@@ -1,3 +1,4 @@
 - Régler problème de performance au chargement de la page
-- Régler les bandes blanches quand je scroll au max
-- Régler les titres, faire un rendu propre pour chaque section
+- Bien gérer les titres + faire les liens
+- Faire une meilleure hero section et supprimer ou mettre une vraie image
+- Finir de mettre mes skills (utiliser figma)

@@ -12,9 +12,18 @@ import picture_p3 from './assets/miniforum.jpg'
 import icon_express from './assets/expressjs.png'
 import github_logo from './assets/github.png'
 import linkedin_logo from './assets/LinkedIn_icon_circle.svg.png'
-
+import icon_symfony from './assets/symfony-icon.png'
+import icon_oracle from './assets/Oracle-icon.png'
+import icon_docker from './assets/docker-logo.png'
+import icon_kubernetes from './assets/kubernetes-icon.png'
+import icon_htmlcss from './assets/htmlcss_logo.png'
+import icon_postgresql from './assets/postgresql_logo.png'
 function App() {
   function handleProject1(){
+    window.location.href='https://github.com/gorimaaa/Crossword_WebApp';
+  }
+
+  function handleProject2(){
     window.location.href='https://github.com/gorimaaa/Crossword_WebApp';
   }
 
@@ -39,15 +48,14 @@ function App() {
         <div className="right-navbar">
           <a href="#aboutme">About me</a>
           <a href="#myprojects">Projects</a>
-          <a href="#myskills">Skills</a>
-          <a href="#profiles">Profiles</a>
+          <a href="#skills-title">Skills</a>
+          <a href="#profiles-title">Profiles</a>
         </div>
       </nav>
     <div className='main-container'>
       <div className="main">
           <div className='about-me'>
-          <img src={MyPhoto} alt='Une photo de profil'></img>
-          <p>Hi, I'm Juba, a Full Stack Web Developer 💻<br></br> I love web and I'm passionate about this field since 2 years😁
+          <p>Hi, I'm Juba, a Full Stack Web Developer 💻
           </p>
         </div>
     </div>
@@ -74,6 +82,10 @@ function App() {
                 </div>
               </div>
             </div>
+            <button type='button' className='btn-github' onClick={handleProject1}>
+              Github
+              <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Logo GitHub" width='20px' height='20px'></img>
+            </button>
           </div>
         </div>
 
@@ -100,6 +112,10 @@ function App() {
                 </div>
               </div>
             </div>
+            <button type='button' className='btn-github' onClick={handleProject2}>
+                Github
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Logo GitHub" width='20px' height='20px'></img>
+            </button>
           </div>
         </div>
 
@@ -126,12 +142,16 @@ function App() {
                   </div>
                 </div>
               </div>
+              <button type='button' className='btn-github' onClick={handleProject3}>
+                Github
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Logo GitHub" width='20px' height='20px'></img>
+              </button>
             </div>
         </div>
 
         <h1 id='skills-title'>Skills</h1>
         <div className='skills'>
-          <div className='section-skill'>
+          <div className='section-skill' id='frontend'>
             <h2>Frontend</h2>
               <div className='logos-skills'>
                 <div className='logo-item'>
@@ -139,12 +159,12 @@ function App() {
                   <p>React</p>
                 </div>
                 <div className='logo-item'>
-                  <img src={icon_express} alt="A expressjs logo" width={65} height={60}></img>
-                  <p>Expressjs</p>
+                  <img src={icon_js} alt="A javascript logo" width={65} height={60}></img>
+                  <p>Javascript</p>
                 </div>
                 <div className='logo-item'>
-                  <img src={icon_mysql} alt="A mysql logo" width={65} height={60}></img>
-                  <p>MySQL</p>
+                  <img src={icon_htmlcss} alt="A htmlcss logo" width={65} height={60}></img>
+                  <p>HTML5 & CSS3</p>
                 </div>
             </div>
           </div>
@@ -153,16 +173,34 @@ function App() {
             <h2>Backend</h2>
               <div className='logos-skills'>
                 <div className='logo-item'>
-                  <img src={icon_react} alt="A React logo" width={65} height={60}></img>
-                  <p>React</p>
+                  <img src={icon_spring} alt="A Spring boot logo" width={65} height={60}></img>
+                  <p>Spring Boot</p>
                 </div>
                 <div className='logo-item'>
-                  <img src={icon_express} alt="A expressjs logo" width={65} height={60}></img>
-                  <p>Expressjs</p>
+                  <img src={icon_symfony} alt="A Symonfy logo" width={65} height={60}></img>
+                  <p>Symfony</p>
                 </div>
+                <div className='logo-item'>
+                  <img src={icon_express} alt="A ExpressJS logo" width={65} height={60}></img>
+                  <p>ExpressJS</p>
+                </div>
+            </div>
+          </div>
+
+          <div className='section-skill'>
+            <h2>Database</h2>
+              <div className='logos-skills'>
                 <div className='logo-item'>
                   <img src={icon_mysql} alt="A mysql logo" width={65} height={60}></img>
                   <p>MySQL</p>
+                </div>
+                <div className='logo-item'>
+                  <img src={icon_oracle} alt="A oracle logo" width={65} height={60}></img>
+                  <p>Oracle</p>
+                </div>
+                <div className='logo-item'>
+                  <img src={icon_postgresql} alt="A postgresql logo" width={65} height={60}></img>
+                  <p>PostgreSQL</p>
                 </div>
             </div>
           </div>
@@ -171,16 +209,16 @@ function App() {
             <h2>DevOps</h2>
               <div className='logos-skills'>
                 <div className='logo-item'>
-                  <img src={icon_react} alt="A React logo" width={65} height={60}></img>
-                  <p>React</p>
+                  <img src={icon_docker} alt="A docker logo" width={65} height={60}></img>
+                  <p>Docker</p>
                 </div>
                 <div className='logo-item'>
-                  <img src={icon_express} alt="A expressjs logo" width={65} height={60}></img>
-                  <p>Expressjs</p>
+                  <img src={icon_kubernetes} alt="A kubernetes logo" width={65} height={60}></img>
+                  <p>Kubernetes</p>
                 </div>
                 <div className='logo-item'>
-                  <img src={icon_mysql} alt="A mysql logo" width={65} height={60}></img>
-                  <p>MySQL</p>
+                  <img src={icon_cicd} alt="A CICD logo" width={65} height={60}></img>
+                  <p>CI/CD Pipeline</p>
                 </div>
             </div>
           </div>
