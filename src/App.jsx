@@ -1,42 +1,41 @@
 import './App.scss';
-import MyPhoto from './assets/portrait-pro.jpg'
-import picture_p1 from './assets/logo_dm.png'
-import icon_react from './assets/React-icon.svg.png'
-import icon_spring from './assets/spring_boot_icon.png'
-import icon_cicd from './assets/cicd_icon.png'
-import picture_p2 from './assets/crossword.jpg'
-import icon_jee from './assets/jee_icon.png'
-import icon_js from './assets/javascript_icon.png'
-import icon_mysql from './assets/mysql-logo.png'
-import picture_p3 from './assets/miniforum.jpg'
-import icon_express from './assets/expressjs.png'
-import github_logo from './assets/github.png'
-import linkedin_logo from './assets/LinkedIn_icon_circle.svg.png'
-import icon_symfony from './assets/symfony-icon.png'
-import icon_oracle from './assets/Oracle-icon.png'
-import icon_docker from './assets/docker-logo.png'
-import icon_kubernetes from './assets/kubernetes-icon.png'
-import icon_htmlcss from './assets/htmlcss_logo.png'
-import icon_postgresql from './assets/postgresql_logo.png'
+import picture_p1 from './assets/logo_dm.webp'
+import icon_react from './assets/React-icon.svg.webp'
+import icon_spring from './assets/spring_boot_icon.webp'
+import icon_cicd from './assets/cicd_icon.webp'
+import picture_p2 from './assets/crossword.webp'
+import icon_jee from './assets/jee_icon.webp'
+import icon_js from './assets/javascript_icon.webp'
+import icon_mysql from './assets/mysql-logo.webp'
+import picture_p3 from './assets/miniforum.webp'
+import icon_express from './assets/expressjs.webp'
+import github_logo from './assets/github.webp'
+import linkedin_logo from './assets/LinkedIn_icon_circle.svg.webp'
+import icon_symfony from './assets/symfony-icon.webp'
+import icon_oracle from './assets/Oracle-icon.webp'
+import icon_docker from './assets/docker-logo.webp'
+import icon_kubernetes from './assets/kubernetes-icon.webp'
+import icon_htmlcss from './assets/htmlcss_logo.webp'
+import icon_postgresql from './assets/postgresql_logo.webp'
 function App() {
   function handleProject1(){
-    window.location.href='https://github.com/gorimaaa/Crossword_WebApp';
+    window.open('https://github.com/gorimaaa/DungeonMaster');
   }
 
   function handleProject2(){
-    window.location.href='https://github.com/gorimaaa/Crossword_WebApp';
+    window.open('https://github.com/gorimaaa/Crossword_WebApp');
   }
 
   function handleProject3(){
-    window.location.href='https://github.com/gorimaaa/MiniForum';
+    window.open('https://miniforum.jubabelhocine.com/');
   }
 
   function handleGithub(){
-    window.location.href='https://github.com/gorimaaa';
+    window.open("https://github.com/gorimaaa");
   }
 
   function handleLinkedin(){
-    window.location.href='https://www.linkedin.com/in/jubabelhocine';
+    window.open('https://www.linkedin.com/in/jubabelhocine');
   }
 
  return (
@@ -55,8 +54,11 @@ function App() {
     <div className='main-container'>
       <div className="main">
           <div className='about-me'>
-          <p>Hi, I'm Juba, a Full Stack Web Developer 💻
+          <p>Hi, I'm Juba, a Full Stack Web Developer 👋<br/>
+          I love web technologies and I'm always seeking to learn more on this field💻<br/>
+          I made this website with React and pure CSS to show my projects and skills 🙂<br/>
           </p>
+          
         </div>
     </div>
     <h1 id='myprojects'>My projects</h1>
@@ -143,8 +145,7 @@ function App() {
                 </div>
               </div>
               <button type='button' className='btn-github' onClick={handleProject3}>
-                Github
-                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Logo GitHub" width='20px' height='20px'></img>
+                Website
               </button>
             </div>
         </div>
